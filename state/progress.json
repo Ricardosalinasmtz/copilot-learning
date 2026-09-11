@@ -38,14 +38,6 @@
   },
   "queue": [
     {
-      "topic": "Inline Suggestions and Ghost Text",
-      "source": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-personal-developer-environment/about-inline-code-suggestions",
-      "difficulty": "beginner",
-      "section": "Copilot",
-      "estimatedLessons": 2,
-      "priority": 1
-    },
-    {
       "topic": "Copilot Chat Interface Basics",
       "source": "https://docs.github.com/en/copilot/using-github-copilot/exploring-github-copilot-chat/about-github-copilot-chat",
       "difficulty": "beginner",
@@ -94,7 +86,13 @@
       "priority": 4
     }
   ],
-  "completedTopics": [],
+  "completedTopics": [
+    {
+      "topic": "Inline Suggestions and Ghost Text",
+      "completedDate": "2026-09-11",
+      "lessonFile": "2026-09-11_inline-suggestions-ghost-text.md"
+    }
+  ],
   "settings": {
     "lessonsPerDay": 1,
     "lessonTime": "13:00",
@@ -102,8 +100,8 @@
     "timezone": "Europe/Rome"
   },
   "stats": {
-    "totalLessonsDelivered": 0,
-    "currentStreak": 0,
-    "lastLessonDate": null
+    "totalLessonsDelivered": 1,
+    "currentStreak": 1,
+    "lastLessonDate": "2026-09-11"
   }
 }
