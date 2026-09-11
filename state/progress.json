@@ -17,7 +17,7 @@
   "phases": {
     "phase_1_core": {
       "name": "Core Copilot Features",
-      "status": "not_started",
+      "status": "in_progress",
       "completedTopics": []
     },
     "phase_2_vscode_integration": {
@@ -36,7 +36,64 @@
       "completedTopics": []
     }
   },
-  "queue": [],
+  "queue": [
+    {
+      "topic": "Inline Suggestions and Ghost Text",
+      "source": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-personal-developer-environment/about-inline-code-suggestions",
+      "difficulty": "beginner",
+      "section": "Copilot",
+      "estimatedLessons": 2,
+      "priority": 1
+    },
+    {
+      "topic": "Copilot Chat Interface Basics",
+      "source": "https://docs.github.com/en/copilot/using-github-copilot/exploring-github-copilot-chat/about-github-copilot-chat",
+      "difficulty": "beginner",
+      "section": "Copilot",
+      "estimatedLessons": 2,
+      "priority": 1
+    },
+    {
+      "topic": "Slash Commands Overview",
+      "source": "https://docs.github.com/en/copilot/using-github-copilot/exploring-github-copilot-chat/using-slash-commands-in-github-copilot-chat",
+      "difficulty": "beginner",
+      "section": "Copilot",
+      "estimatedLessons": 2,
+      "priority": 2
+    },
+    {
+      "topic": "Context Management with @ Symbols",
+      "source": "https://docs.github.com/en/copilot/using-github-copilot/exploring-github-copilot-chat/using-context-in-github-copilot-chat",
+      "difficulty": "intermediate",
+      "section": "Copilot",
+      "estimatedLessons": 2,
+      "priority": 2
+    },
+    {
+      "topic": "Accepting and Rejecting Suggestions",
+      "source": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-personal-developer-environment/accepting-or-rejecting-code-suggestions",
+      "difficulty": "beginner",
+      "section": "Copilot",
+      "estimatedLessons": 1,
+      "priority": 3
+    },
+    {
+      "topic": "Natural Language to Code in Comments",
+      "source": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-personal-developer-environment/getting-code-suggestions-from-github-copilot-in-your-editor",
+      "difficulty": "beginner",
+      "section": "Copilot",
+      "estimatedLessons": 1,
+      "priority": 3
+    },
+    {
+      "topic": "Copilot Chat Modes and Perspectives",
+      "source": "https://docs.github.com/en/copilot/using-github-copilot/exploring-github-copilot-chat/changing-github-copilot-chats-mode-or-perspective",
+      "difficulty": "intermediate",
+      "section": "Copilot",
+      "estimatedLessons": 2,
+      "priority": 4
+    }
+  ],
   "completedTopics": [],
   "settings": {
     "lessonsPerDay": 1,
