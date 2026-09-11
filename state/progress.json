@@ -1,0 +1,52 @@
+{
+  "projectName": "copilot-learning",
+  "createdAt": "2026-09-11",
+  "lastUpdated": "2026-09-11",
+  "environment": {
+    "os": "Ubuntu 24.04.4 LTS",
+    "vscode": "1.136.1",
+    "copilotIntegration": "Built-in (VSCode native)",
+    "copilotSubscription": "GitHub Copilot Business (Enterprise)"
+  },
+  "currentVersion": {
+    "vscode": "1.136.1",
+    "copilot": "built-in"
+  },
+  "versionHistory": [],
+  "currentPhase": "phase_1_core",
+  "phases": {
+    "phase_1_core": {
+      "name": "Core Copilot Features",
+      "status": "not_started",
+      "completedTopics": []
+    },
+    "phase_2_vscode_integration": {
+      "name": "VSCode Integration",
+      "status": "locked",
+      "completedTopics": []
+    },
+    "phase_3_advanced": {
+      "name": "Advanced Workflows",
+      "status": "locked",
+      "completedTopics": []
+    },
+    "phase_4_deep": {
+      "name": "Deep Customization",
+      "status": "locked",
+      "completedTopics": []
+    }
+  },
+  "queue": [],
+  "completedTopics": [],
+  "settings": {
+    "lessonsPerDay": 1,
+    "lessonTime": "13:00",
+    "researchTime": "12:30",
+    "timezone": "Europe/Rome"
+  },
+  "stats": {
+    "totalLessonsDelivered": 0,
+    "currentStreak": 0,
+    "lastLessonDate": null
+  }
+}

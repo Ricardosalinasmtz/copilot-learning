@@ -1,0 +1,10 @@
+{
+  "versions": [
+    {
+      "vscode": "1.136.1",
+      "copilot": "built-in",
+      "detectedAt": "2026-09-11",
+      "notes": "Initial setup - VSCode 1.136.1 with built-in Copilot integration"
+    }
+  ]
+}
