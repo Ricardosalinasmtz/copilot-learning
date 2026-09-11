@@ -11,7 +11,9 @@ Project-specific memory for the GitHub Copilot Learning System.
 - **Version-aware learning:** Track VSCode and Copilot version changes and prioritize new features
 - **Curriculum approach:** Structured phases instead of random topic selection
 - **Direct chat delivery:** Lessons delivered to main session, not webhooks
-- **Session configuration:** Use dashboard session (agent:sokka-orchestrator:dashboard:*) to avoid delivery bugs in main session
+- **Session configuration:**
+  - Weekly research: zuko-researcher (agent:zuko-researcher:main)
+  - Daily lesson: sokka-orchestrator (dashboard session to avoid delivery bugs)
 
 ## Technical Learnings
 
@@ -33,7 +35,7 @@ Project-specific memory for the GitHub Copilot Learning System.
 - ~~Hourly random topic selection~~ → Too chaotic, no curriculum structure
 - ~~External cron + webhook delivery~~ → Unnecessary complexity when OpenClaw automations exist
 - ~~Single combined job~~ → Separation of concerns: research vs delivery
-- ~~Delegating research to zuko-researcher~~ → Keeping in sokka-orchestrator for simplicity
+
 
 ## Version Tracking
 

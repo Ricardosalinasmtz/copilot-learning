@@ -8,7 +8,7 @@ Create an automated, sustainable learning system that teaches GitHub Copilot and
 
 ### Weekly Research Cycle (Fridays 12:30 PM Europe/Rome)
 
-**Agent:** sokka-orchestrator
+**Agent:** zuko-researcher (delegated by sokka-orchestrator)
 
 **Responsibilities:**
 1. Check current VSCode and Copilot versions against tracked versions

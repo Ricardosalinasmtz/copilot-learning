@@ -35,7 +35,7 @@ copilot-learning/
    - Checks VSCode and Copilot versions for changes
    - Explores documentation and web resources for new/important topics
    - Updates the learning queue with 5-7 topics
-   - Runs in sokka-orchestrator session
+   - Runs in zuko-researcher session (delegated by sokka-orchestrator)
 
 2. **Daily Lesson Delivery** - Mon-Fri 1:00 PM Europe/Rome
    - Extracts next topic from queue
