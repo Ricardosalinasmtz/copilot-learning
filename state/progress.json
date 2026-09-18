@@ -1,7 +1,7 @@
 {
   "projectName": "copilot-learning",
   "createdAt": "2026-09-11",
-  "lastUpdated": "2026-09-11",
+  "lastUpdated": "2026-09-18T12:30:00+02:00",
   "environment": {
     "os": "Ubuntu 24.04.4 LTS",
     "vscode": "1.136.1",
@@ -13,16 +13,42 @@
     "copilot": "built-in"
   },
   "versionHistory": [],
-  "currentPhase": "phase_1_core",
+  "currentPhase": "phase_2_vscode_integration",
   "phases": {
     "phase_1_core": {
       "name": "Core Copilot Features",
-      "status": "in_progress",
-      "completedTopics": []
+      "status": "completed",
+      "completedTopics": [
+        {
+          "topic": "Inline Suggestions and Ghost Text",
+          "completedDate": "2026-09-11",
+          "lessonFile": "2026-09-11_inline-suggestions-ghost-text.md"
+        },
+        {
+          "topic": "Copilot Chat Interface Basics",
+          "completedDate": "2026-09-14",
+          "lessonFile": "2026-09-14_copilot-chat-interface-basics.md"
+        },
+        {
+          "topic": "Slash Commands Overview",
+          "completedDate": "2026-09-15",
+          "lessonFile": "2026-09-15_slash-commands-overview.md"
+        },
+        {
+          "topic": "Context Management with @ Symbols",
+          "completedDate": "2026-09-16",
+          "lessonFile": "2026-09-16_context-management-with-at-symbols.md"
+        },
+        {
+          "topic": "Accepting and Rejecting Suggestions",
+          "completedDate": "2026-09-17",
+          "lessonFile": "2026-09-17_accepting-and-rejecting-suggestions.md"
+        }
+      ]
     },
     "phase_2_vscode_integration": {
       "name": "VSCode Integration",
-      "status": "locked",
+      "status": "in_progress",
       "completedTopics": []
     },
     "phase_3_advanced": {
@@ -38,38 +64,6 @@
   },
   "queue": [
     {
-      "topic": "Copilot Chat Interface Basics",
-      "source": "https://docs.github.com/en/copilot/using-github-copilot/exploring-github-copilot-chat/about-github-copilot-chat",
-      "difficulty": "beginner",
-      "section": "Copilot",
-      "estimatedLessons": 2,
-      "priority": 1
-    },
-    {
-      "topic": "Slash Commands Overview",
-      "source": "https://docs.github.com/en/copilot/using-github-copilot/exploring-github-copilot-chat/using-slash-commands-in-github-copilot-chat",
-      "difficulty": "beginner",
-      "section": "Copilot",
-      "estimatedLessons": 2,
-      "priority": 2
-    },
-    {
-      "topic": "Context Management with @ Symbols",
-      "source": "https://docs.github.com/en/copilot/using-github-copilot/exploring-github-copilot-chat/using-context-in-github-copilot-chat",
-      "difficulty": "intermediate",
-      "section": "Copilot",
-      "estimatedLessons": 2,
-      "priority": 2
-    },
-    {
-      "topic": "Accepting and Rejecting Suggestions",
-      "source": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-personal-developer-environment/accepting-or-rejecting-code-suggestions",
-      "difficulty": "beginner",
-      "section": "Copilot",
-      "estimatedLessons": 1,
-      "priority": 3
-    },
-    {
       "topic": "Natural Language to Code in Comments",
       "source": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-personal-developer-environment/getting-code-suggestions-from-github-copilot-in-your-editor",
       "difficulty": "beginner",
@@ -84,6 +78,62 @@
       "section": "Copilot",
       "estimatedLessons": 2,
       "priority": 4
+    },
+    {
+      "topic": "Copilot in Integrated Terminal",
+      "source": "https://docs.github.com/en/copilot/how-tos/copilot-cli",
+      "difficulty": "intermediate",
+      "section": "VSCode Integration",
+      "estimatedLessons": 2,
+      "priority": 5
+    },
+    {
+      "topic": "Prompt Engineering for Copilot Chat",
+      "source": "https://docs.github.com/en/copilot/concepts/prompting/prompt-engineering",
+      "difficulty": "intermediate",
+      "section": "Advanced Workflows",
+      "estimatedLessons": 2,
+      "priority": 4
+    },
+    {
+      "topic": "Custom Instructions for Copilot (Personal, Repository, Organization)",
+      "source": "https://docs.github.com/en/copilot/concepts/prompting/response-customization",
+      "difficulty": "intermediate",
+      "section": "Advanced Workflows",
+      "estimatedLessons": 3,
+      "priority": 5
+    },
+    {
+      "topic": "Copilot Memory (Repository Facts and User Preferences)",
+      "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-memory",
+      "difficulty": "advanced",
+      "section": "Advanced Workflows",
+      "estimatedLessons": 2,
+      "priority": 3
+    },
+    {
+      "topic": "Copilot Spaces (Organizing and Sharing Context)",
+      "source": "https://docs.github.com/en/copilot/concepts/context/spaces",
+      "difficulty": "intermediate",
+      "section": "Advanced Workflows",
+      "estimatedLessons": 2,
+      "priority": 4
+    },
+    {
+      "topic": "Agent Hooks for Copilot (Custom Automation Triggers)",
+      "source": "https://docs.github.com/en/copilot/concepts/agents/hooks",
+      "difficulty": "advanced",
+      "section": "Deep Customization",
+      "estimatedLessons": 3,
+      "priority": 2
+    },
+    {
+      "topic": "Model Context Protocol (MCP) and GitHub Copilot",
+      "source": "https://docs.github.com/en/copilot/concepts/context/mcp",
+      "difficulty": "advanced",
+      "section": "Deep Customization",
+      "estimatedLessons": 3,
+      "priority": 2
     }
   ],
   "completedTopics": [
@@ -91,6 +141,26 @@
       "topic": "Inline Suggestions and Ghost Text",
       "completedDate": "2026-09-11",
       "lessonFile": "2026-09-11_inline-suggestions-ghost-text.md"
+    },
+    {
+      "topic": "Copilot Chat Interface Basics",
+      "completedDate": "2026-09-14",
+      "lessonFile": "2026-09-14_copilot-chat-interface-basics.md"
+    },
+    {
+      "topic": "Slash Commands Overview",
+      "completedDate": "2026-09-15",
+      "lessonFile": "2026-09-15_slash-commands-overview.md"
+    },
+    {
+      "topic": "Context Management with @ Symbols",
+      "completedDate": "2026-09-16",
+      "lessonFile": "2026-09-16_context-management-with-at-symbols.md"
+    },
+    {
+      "topic": "Accepting and Rejecting Suggestions",
+      "completedDate": "2026-09-17",
+      "lessonFile": "2026-09-17_accepting-and-rejecting-suggestions.md"
     }
   ],
   "settings": {
@@ -100,8 +170,8 @@
     "timezone": "Europe/Rome"
   },
   "stats": {
-    "totalLessonsDelivered": 1,
-    "currentStreak": 1,
-    "lastLessonDate": "2026-09-11"
+    "totalLessonsDelivered": 5,
+    "currentStreak": 5,
+    "lastLessonDate": "2026-09-17"
   }
 }
