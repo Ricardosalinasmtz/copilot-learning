@@ -5,6 +5,12 @@
       "copilot": "built-in",
       "detectedAt": "2026-09-11",
       "notes": "Initial setup - VSCode 1.136.1 with built-in Copilot integration"
+    },
+    {
+      "vscode": "1.139.1",
+      "copilot": "built-in",
+      "detectedAt": "2026-10-02",
+      "notes": "Version bump 1.136.1 → 1.139.1. New features detected: GitHub Agentic Workflows (public preview), dynamic workflows, Copilot CLI /fleet parallel execution, /research command, BYOK support, code review agentic capabilities, CLI extensions, computer use in CLI."
     }
   ]
 }

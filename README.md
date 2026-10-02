@@ -9,6 +9,41 @@ This project implements a structured learning approach for mastering GitHub Copi
 - **Weekly Research (Fridays 12:30 PM):** Explores Copilot/VSCode documentation, checks version changes, and maintains a learning queue
 - **Daily Lessons (Mon-Fri 1:00 PM):** Delivers one curated lesson from the queue directly to the user
 
+## Automation Architecture
+
+This project uses a delegation pattern to separate concerns between the orchestrator and the research agent:
+
+| Automation | Schedule | Agent | Session | Pattern |
+|------------|----------|-------|---------|---------|
+| **Weekly Research** | Fridays 12:30 PM | sokka-orchestrator | `agent:sokka-orchestrator:main` | Delegates to zuko-researcher via `sessions_spawn` |
+| **Daily Lesson** | Mon-Fri 1:00 PM | sokka-orchestrator | `agent:sokka-orchestrator:main` | Direct lesson delivery |
+
+### Communication Pattern
+
+```
+User → sokka (weekly research job / daily lesson job)
+sokka → zuko (spawn via sessions_spawn)
+zuko → sokka (report results)
+sokka → user (deliver)
+```
+
+This is the only communication path. No direct user-zuko interaction.
+
+### Weekly Research Workflow
+
+1. Cron fires sokka-orchestrator's weekly research job
+2. Sokka spawns zuko-researcher as a hidden subagent (`visible: false, context: isolated`)
+3. Zuko performs research, updates state, commits to git
+4. Zuko reports results to sokka
+5. Sokka delivers the summary to the user
+
+### Daily Lesson Workflow
+
+1. Cron fires sokka-orchestrator's daily lesson job
+2. Sokka extracts the next topic from the queue
+3. Sokka formats the lesson and delivers it to the user
+4. Sokka updates state and archives the lesson
+
 ## Structure
 
 ```

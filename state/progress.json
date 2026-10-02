@@ -1,19 +1,16 @@
 {
   "projectName": "copilot-learning",
   "createdAt": "2026-09-11",
-  "lastUpdated": "2026-09-18T12:30:00+02:00",
+  "lastUpdated": "2026-10-02T12:30:00+02:00",
   "environment": {
     "os": "Ubuntu 24.04.4 LTS",
-    "vscode": "1.136.1",
-    "copilotIntegration": "Built-in (VSCode native)",
     "copilotSubscription": "GitHub Copilot Business (Enterprise)"
   },
   "currentVersion": {
-    "vscode": "1.136.1",
+    "vscode": "1.139.1",
     "copilot": "built-in"
   },
-  "versionHistory": [],
-  "currentPhase": "phase_2_vscode_integration",
+  "currentPhase": "phase_3_advanced",
   "phases": {
     "phase_1_core": {
       "name": "Core Copilot Features",
@@ -43,18 +40,50 @@
           "topic": "Accepting and Rejecting Suggestions",
           "completedDate": "2026-09-17",
           "lessonFile": "2026-09-17_accepting-and-rejecting-suggestions.md"
+        },
+        {
+          "topic": "Natural Language to Code in Comments",
+          "completedDate": "2026-09-18",
+          "lessonFile": "2026-09-18_natural-language-to-code-in-comments.md"
         }
       ]
     },
     "phase_2_vscode_integration": {
       "name": "VSCode Integration",
-      "status": "in_progress",
-      "completedTopics": []
+      "status": "completed",
+      "completedTopics": [
+        {
+          "topic": "Copilot in Integrated Terminal",
+          "completedDate": "2026-09-21",
+          "lessonFile": "2026-09-21_copilot-in-integrated-terminal.md"
+        },
+        {
+          "topic": "Prompt Engineering for Copilot Chat",
+          "completedDate": "2026-09-22",
+          "lessonFile": "2026-09-22_prompt-engineering-for-copilot-chat.md"
+        },
+        {
+          "topic": "Copilot Memory (Repository Facts and User Preferences)",
+          "completedDate": "2026-09-22",
+          "lessonFile": "2026-09-22_copilot-memory-facts-and-preferences.md"
+        }
+      ]
     },
     "phase_3_advanced": {
       "name": "Advanced Workflows",
-      "status": "locked",
-      "completedTopics": []
+      "status": "in_progress",
+      "completedTopics": [
+        {
+          "topic": "Custom Instructions for Copilot (Personal, Repository, Organization)",
+          "completedDate": "2026-09-30",
+          "lessonFile": "2026-09-30_custom-instructions-personal-repo-org.md"
+        },
+        {
+          "topic": "Copilot Spaces (Organizing and Sharing Context)",
+          "completedDate": "2026-10-01",
+          "lessonFile": "2026-10-01_copilot-spaces-organizing-sharing-context.md"
+        }
+      ]
     },
     "phase_4_deep": {
       "name": "Deep Customization",
@@ -64,103 +93,76 @@
   },
   "queue": [
     {
-      "topic": "Natural Language to Code in Comments",
-      "source": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-personal-developer-environment/getting-code-suggestions-from-github-copilot-in-your-editor",
-      "difficulty": "beginner",
-      "section": "Copilot",
-      "estimatedLessons": 1,
-      "priority": 3
-    },
-    {
-      "topic": "Copilot Chat Modes and Perspectives",
-      "source": "https://docs.github.com/en/copilot/using-github-copilot/exploring-github-copilot-chat/changing-github-copilot-chats-mode-or-perspective",
-      "difficulty": "intermediate",
-      "section": "Copilot",
-      "estimatedLessons": 2,
-      "priority": 4
-    },
-    {
-      "topic": "Copilot in Integrated Terminal",
-      "source": "https://docs.github.com/en/copilot/how-tos/copilot-cli",
-      "difficulty": "intermediate",
-      "section": "VSCode Integration",
-      "estimatedLessons": 2,
-      "priority": 5
-    },
-    {
-      "topic": "Prompt Engineering for Copilot Chat",
-      "source": "https://docs.github.com/en/copilot/concepts/prompting/prompt-engineering",
-      "difficulty": "intermediate",
-      "section": "Advanced Workflows",
-      "estimatedLessons": 2,
-      "priority": 4
-    },
-    {
-      "topic": "Custom Instructions for Copilot (Personal, Repository, Organization)",
-      "source": "https://docs.github.com/en/copilot/concepts/prompting/response-customization",
-      "difficulty": "intermediate",
-      "section": "Advanced Workflows",
-      "estimatedLessons": 3,
-      "priority": 5
-    },
-    {
-      "topic": "Copilot Memory (Repository Facts and User Preferences)",
-      "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-memory",
+      "topic": "Copilot Code Review with Agentic Capabilities (Full Context Analysis, Cloud Agent Handoff)",
+      "source": "https://docs.github.com/en/copilot/concepts/agents/code-review",
       "difficulty": "advanced",
-      "section": "Advanced Workflows",
-      "estimatedLessons": 2,
-      "priority": 3
+      "section": "Phase 3 - Advanced Workflows",
+      "estimatedLessons": 3,
+      "priority": 1,
+      "addedAt": "2026-10-02"
     },
     {
-      "topic": "Copilot Spaces (Organizing and Sharing Context)",
-      "source": "https://docs.github.com/en/copilot/concepts/context/spaces",
+      "topic": "GitHub Agentic Workflows in GitHub Actions (Natural Language Automation, Safe Outputs)",
+      "source": "https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows",
+      "difficulty": "advanced",
+      "section": "Phase 3 - Advanced Workflows",
+      "estimatedLessons": 3,
+      "priority": 1,
+      "addedAt": "2026-10-02"
+    },
+    {
+      "topic": "Dynamic Workflows in Copilot (Reusable Multi-Step Processes with Agents)",
+      "source": "https://docs.github.com/en/copilot/concepts/agents/dynamic-workflows",
+      "difficulty": "advanced",
+      "section": "Phase 3 - Advanced Workflows",
+      "estimatedLessons": 3,
+      "priority": 1,
+      "addedAt": "2026-10-02"
+    },
+    {
+      "topic": "GitHub Copilot CLI Deep Dive (Interactive/Programmatic Modes, Plan Mode, Autopilot)",
+      "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-copilot-cli",
       "difficulty": "intermediate",
-      "section": "Advanced Workflows",
+      "section": "Phase 3 - Advanced Workflows",
+      "estimatedLessons": 3,
+      "priority": 2,
+      "addedAt": "2026-10-02"
+    },
+    {
+      "topic": "Copilot CLI /fleet Command (Parallel Task Execution with Subagents)",
+      "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/fleet",
+      "difficulty": "advanced",
+      "section": "Phase 4 - Deep Customization",
       "estimatedLessons": 2,
-      "priority": 4
+      "priority": 2,
+      "addedAt": "2026-10-02"
     },
     {
-      "topic": "Agent Hooks for Copilot (Custom Automation Triggers)",
-      "source": "https://docs.github.com/en/copilot/concepts/agents/hooks",
+      "topic": "Copilot CLI /research Command (In-Depth Research Agent with Reports)",
+      "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/research",
+      "difficulty": "intermediate",
+      "section": "Phase 4 - Deep Customization",
+      "estimatedLessons": 2,
+      "priority": 3,
+      "addedAt": "2026-10-02"
+    },
+    {
+      "topic": "Bring Your Own Key (BYOK) for GitHub Copilot (Local & Enterprise Custom Models)",
+      "source": "https://docs.github.com/en/copilot/concepts/models/bring-your-own-key",
       "difficulty": "advanced",
-      "section": "Deep Customization",
+      "section": "Phase 4 - Deep Customization",
       "estimatedLessons": 3,
-      "priority": 2
+      "priority": 2,
+      "addedAt": "2026-10-02"
     },
     {
-      "topic": "Model Context Protocol (MCP) and GitHub Copilot",
-      "source": "https://docs.github.com/en/copilot/concepts/context/mcp",
+      "topic": "Copilot CLI Extensions (Custom Tools & Slash Commands via SDK)",
+      "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-cli-extensions",
       "difficulty": "advanced",
-      "section": "Deep Customization",
+      "section": "Phase 4 - Deep Customization",
       "estimatedLessons": 3,
-      "priority": 2
-    }
-  ],
-  "completedTopics": [
-    {
-      "topic": "Inline Suggestions and Ghost Text",
-      "completedDate": "2026-09-11",
-      "lessonFile": "2026-09-11_inline-suggestions-ghost-text.md"
-    },
-    {
-      "topic": "Copilot Chat Interface Basics",
-      "completedDate": "2026-09-14",
-      "lessonFile": "2026-09-14_copilot-chat-interface-basics.md"
-    },
-    {
-      "topic": "Slash Commands Overview",
-      "completedDate": "2026-09-15",
-      "lessonFile": "2026-09-15_slash-commands-overview.md"
-    },
-    {
-      "topic": "Context Management with @ Symbols",
-      "completedDate": "2026-09-16",
-      "lessonFile": "2026-09-16_context-management-with-at-symbols.md"
-    },
-    {
-      "topic": "Accepting and Rejecting Suggestions",
-      "completedDate": "2026-09-17",
-      "lessonFile": "2026-09-17_accepting-and-rejecting-suggestions.md"
+      "priority": 2,
+      "addedAt": "2026-10-02"
     }
   ],
   "settings": {
@@ -170,8 +172,8 @@
     "timezone": "Europe/Rome"
   },
   "stats": {
-    "totalLessonsDelivered": 5,
-    "currentStreak": 5,
-    "lastLessonDate": "2026-09-17"
+    "totalLessonsDelivered": 11,
+    "currentStreak": 11,
+    "lastLessonDate": "2026-10-01"
   }
 }
