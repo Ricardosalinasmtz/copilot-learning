@@ -1,7 +1,7 @@
 {
   "projectName": "copilot-learning",
   "createdAt": "2026-09-11",
-  "lastUpdated": "2026-10-02T12:30:00+02:00",
+  "lastUpdated": "2026-10-05T13:00:00+02:00",
   "environment": {
     "os": "Ubuntu 24.04.4 LTS",
     "copilotSubscription": "GitHub Copilot Business (Enterprise)"
@@ -10,7 +10,7 @@
     "vscode": "1.139.1",
     "copilot": "built-in"
   },
-  "currentPhase": "phase_3_advanced",
+  "currentPhase": "phase_2_vscode_integration",
   "phases": {
     "phase_1_core": {
       "name": "Core Copilot Features",
@@ -50,7 +50,7 @@
     },
     "phase_2_vscode_integration": {
       "name": "VSCode Integration",
-      "status": "completed",
+      "status": "in_progress",
       "completedTopics": [
         {
           "topic": "Copilot in Integrated Terminal",
@@ -66,6 +66,11 @@
           "topic": "Copilot Memory (Repository Facts and User Preferences)",
           "completedDate": "2026-09-22",
           "lessonFile": "2026-09-22_copilot-memory-facts-and-preferences.md"
+        },
+        {
+          "topic": "Debugging Assistance with Copilot",
+          "completedDate": "2026-10-05",
+          "lessonFile": "2026-10-05_debugging-assistance-with-copilot.md"
         }
       ]
     },
@@ -82,6 +87,11 @@
           "topic": "Copilot Spaces (Organizing and Sharing Context)",
           "completedDate": "2026-10-01",
           "lessonFile": "2026-10-01_copilot-spaces-organizing-sharing-context.md"
+        },
+        {
+          "topic": "Copilot Code Review with Agentic Capabilities (Full Context Analysis, Cloud Agent Handoff)",
+          "completedDate": "2026-10-02",
+          "lessonFile": "2026-10-02_copilot-code-review-agentic-capabilities.md"
         }
       ]
     },
@@ -93,38 +103,74 @@
   },
   "queue": [
     {
-      "topic": "Copilot Code Review with Agentic Capabilities (Full Context Analysis, Cloud Agent Handoff)",
-      "source": "https://docs.github.com/en/copilot/concepts/agents/code-review",
-      "difficulty": "advanced",
-      "section": "Phase 3 - Advanced Workflows",
-      "estimatedLessons": 3,
+      "topic": "Refactoring Workflows with Copilot",
+      "source": "https://code.visualstudio.com/docs/chat/inline-chat",
+      "difficulty": "intermediate",
+      "section": "phase_2_vscode_integration",
       "priority": 1,
-      "addedAt": "2026-10-02"
+      "addedAt": "2026-10-03"
+    },
+    {
+      "topic": "Test Generation Patterns with Copilot",
+      "source": "https://code.visualstudio.com/docs/agents/guides/test-code-with-ai",
+      "difficulty": "intermediate",
+      "section": "phase_2_vscode_integration",
+      "priority": 1,
+      "addedAt": "2026-10-03"
+    },
+    {
+      "topic": "Multi-File Edits with Copilot",
+      "source": "https://code.visualstudio.com/docs/agents/run/review-code-edits",
+      "difficulty": "intermediate",
+      "section": "phase_2_vscode_integration",
+      "priority": 1,
+      "addedAt": "2026-10-03"
+    },
+    {
+      "topic": "Copilot Edits Mode",
+      "source": "https://code.visualstudio.com/docs/agents/overview",
+      "difficulty": "intermediate",
+      "section": "phase_2_vscode_integration",
+      "priority": 1,
+      "addedAt": "2026-10-03"
+    },
+    {
+      "topic": "Agent Hooks for Copilot (Custom Automation Triggers)",
+      "source": "https://docs.github.com/en/copilot/concepts/agents/hooks",
+      "difficulty": "advanced",
+      "section": "phase_4_deep",
+      "priority": 2,
+      "addedAt": "2026-09-18"
+    },
+    {
+      "topic": "Model Context Protocol (MCP) and GitHub Copilot",
+      "source": "https://docs.github.com/en/copilot/concepts/context/mcp",
+      "difficulty": "advanced",
+      "section": "phase_4_deep",
+      "priority": 2,
+      "addedAt": "2026-09-18"
     },
     {
       "topic": "GitHub Agentic Workflows in GitHub Actions (Natural Language Automation, Safe Outputs)",
       "source": "https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows",
       "difficulty": "advanced",
-      "section": "Phase 3 - Advanced Workflows",
-      "estimatedLessons": 3,
-      "priority": 1,
+      "section": "phase_3_advanced",
+      "priority": 2,
       "addedAt": "2026-10-02"
     },
     {
       "topic": "Dynamic Workflows in Copilot (Reusable Multi-Step Processes with Agents)",
       "source": "https://docs.github.com/en/copilot/concepts/agents/dynamic-workflows",
       "difficulty": "advanced",
-      "section": "Phase 3 - Advanced Workflows",
-      "estimatedLessons": 3,
-      "priority": 1,
+      "section": "phase_3_advanced",
+      "priority": 2,
       "addedAt": "2026-10-02"
     },
     {
       "topic": "GitHub Copilot CLI Deep Dive (Interactive/Programmatic Modes, Plan Mode, Autopilot)",
       "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-copilot-cli",
       "difficulty": "intermediate",
-      "section": "Phase 3 - Advanced Workflows",
-      "estimatedLessons": 3,
+      "section": "phase_3_advanced",
       "priority": 2,
       "addedAt": "2026-10-02"
     },
@@ -132,8 +178,7 @@
       "topic": "Copilot CLI /fleet Command (Parallel Task Execution with Subagents)",
       "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/fleet",
       "difficulty": "advanced",
-      "section": "Phase 4 - Deep Customization",
-      "estimatedLessons": 2,
+      "section": "phase_4_deep",
       "priority": 2,
       "addedAt": "2026-10-02"
     },
@@ -141,8 +186,7 @@
       "topic": "Copilot CLI /research Command (In-Depth Research Agent with Reports)",
       "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/research",
       "difficulty": "intermediate",
-      "section": "Phase 4 - Deep Customization",
-      "estimatedLessons": 2,
+      "section": "phase_4_deep",
       "priority": 3,
       "addedAt": "2026-10-02"
     },
@@ -150,8 +194,7 @@
       "topic": "Bring Your Own Key (BYOK) for GitHub Copilot (Local & Enterprise Custom Models)",
       "source": "https://docs.github.com/en/copilot/concepts/models/bring-your-own-key",
       "difficulty": "advanced",
-      "section": "Phase 4 - Deep Customization",
-      "estimatedLessons": 3,
+      "section": "phase_4_deep",
       "priority": 2,
       "addedAt": "2026-10-02"
     },
@@ -159,8 +202,7 @@
       "topic": "Copilot CLI Extensions (Custom Tools & Slash Commands via SDK)",
       "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-cli-extensions",
       "difficulty": "advanced",
-      "section": "Phase 4 - Deep Customization",
-      "estimatedLessons": 3,
+      "section": "phase_4_deep",
       "priority": 2,
       "addedAt": "2026-10-02"
     }
@@ -172,8 +214,8 @@
     "timezone": "Europe/Rome"
   },
   "stats": {
-    "totalLessonsDelivered": 11,
-    "currentStreak": 11,
-    "lastLessonDate": "2026-10-01"
+    "totalLessonsDelivered": 13,
+    "currentStreak": 13,
+    "lastLessonDate": "2026-10-05"
   }
 }
