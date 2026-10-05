@@ -1,5 +1,5 @@
 # 🎓 Copilot Lesson: Natural Language to Code in Comments
-**Date:** 2026-09-18 | **Day:** 8 of learning streak
+**Date:** 2026-09-18 | **Day:** 6 of learning streak
 **Source:** [Getting code suggestions in your IDE](https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions) | [Code suggestions in your IDE](https://docs.github.com/en/copilot/concepts/completions/code-suggestions) | **Difficulty:** Beginner
 
 ## 🎯 What You'll Learn
@@ -88,4 +88,4 @@ You can also use this for documentation comments. In Visual Studio, Copilot can 
 *(Hint: You can be more specific in the comment, reject the suggestion and see alternatives, or edit the comment to guide Copilot differently.)*
 
 ---
-*Lesson 8 of Phase 1 (Core Features) + Phase 2 (VSCode Integration) | Streak: 8 days*
+*Lesson 6 of Phase 1 (Core Copilot Features) | Streak: 6 days*

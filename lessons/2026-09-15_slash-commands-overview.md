@@ -64,4 +64,4 @@ the purpose is and I'd like a breakdown of the logic.
 *Think about it:* `/fix` targets bugs, but `/optimize` focuses on performance. For general code quality improvements, you might use `/explain` first to understand the intent, then ask for specific improvements.
 
 ---
-*Lesson 3 of Phase 1 | Streak: 3 days*
+*Lesson 3 of Phase 1 (Core Copilot Features) | Streak: 3 days*

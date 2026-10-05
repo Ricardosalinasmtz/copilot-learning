@@ -1,0 +1,10 @@
+# Temporary work files, intermediate data, throwaway notebooks
+tmp/
+
+# Recoverable deletions (pre-commit drafts, files to keep but not version)
+trash/
+
+# OS / editor noise
+.DS_Store
+*.swp
+*~

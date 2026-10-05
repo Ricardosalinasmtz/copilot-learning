@@ -49,7 +49,7 @@ Create an automated, sustainable learning system that teaches GitHub Copilot and
    - Key takeaways (3-5 bullet points)
    - Practical example (code snippet or workflow)
    - Related concepts (links if known)
-   - Quick check (reflection question or quiz)
+   - Quick check (one open question + collapsible answer — see format below)
 5. Deliver to main chat
 6. Save lesson to lessons/ folder
 7. Mark topic as completed
@@ -88,11 +88,22 @@ Create an automated, sustainable learning system that teaches GitHub Copilot and
 
 ## 🤔 Quick Check
 
-[One reflection question or mini-quiz to reinforce learning]
+[One open question applying today's concept to a realistic scenario. Plain paragraph — no blockquote, no bold label, no multiple choice.]
+
+<details>
+<summary>Click to reveal the answer</summary>
+
+**Answer:** [Direct answer, then one or two sentences of reasoning.]
+
+</details>
 
 ---
-*Lesson [X] of Phase [Y] | Streak: [Z] days*
+*Lesson [X] of Phase [N] ([Phase Name]) | Streak: [Z] days*
 ```
+
+**Quick Check rules:** exactly one open-ended question, plain paragraph, never multiple choice. The answer is always included and always inside the `<details>` block — never in the open, never as an inline `*(Answer: ...)*`, never as a hint that gives it away. Blank lines around `**Answer:**` are required for Markdown to render inside `<details>`.
+
+**Footer rules:** always include the phase name in parentheses; a lesson belongs to exactly one phase (never "Phase X + Phase Y"). Lesson number is derived from `stats.totalLessonsDelivered + 1`, phase name verbatim from the `phases` entry matching `currentPhase`.
 
 ## Learning Phases
 

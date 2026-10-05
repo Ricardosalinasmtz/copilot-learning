@@ -1,5 +1,5 @@
 # 🎓 Copilot Lesson: Context Management with @ Symbols
-**Date:** 2026-09-16 | **Day:** 5 of learning streak
+**Date:** 2026-09-16 | **Day:** 4 of learning streak
 **Source:** GitHub Copilot Chat Documentation | **Difficulty:** Intermediate
 
 ## 🎯 What You'll Learn
@@ -68,4 +68,4 @@ Here, `@package.json` attaches that file as explicit context so Copilot gives a 
 If you're working on a React component called `UserProfile.tsx` and want Copilot to refactor it to use TypeScript strict mode, which `@` reference would you type to give Copilot the most precise starting point — `@workspace` or `#UserProfile`?
 
 ---
-*Lesson 4 of Phase 1 (Core Copilot Features) | Streak: 5 days*
+*Lesson 4 of Phase 1 (Core Copilot Features) | Streak: 4 days*

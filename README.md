@@ -79,12 +79,18 @@ copilot-learning/
 
 ## Current Status
 
-- **VSCode Version:** 1.136.1
-- **Copilot Integration:** Built-in (VSCode native)
+Live values are tracked in `state/progress.json` — this section intentionally does not repeat them, so it cannot go stale:
+
+| What | Where |
+|------|-------|
+| VSCode version / Copilot mode | `state/progress.json` → `currentVersion` |
+| Version change log | `state/version_history.json` |
+| Current learning phase | `state/progress.json` → `currentPhase` |
+| Lessons delivered, streak | `state/progress.json` → `stats` |
+
 - **Copilot Subscription:** GitHub Copilot Business (Enterprise)
 - **OS:** Ubuntu 24.04.4 LTS
 - **System Status:** Active
-- **Learning Phase:** Core Features
 
 ## Usage
 
