@@ -1,7 +1,7 @@
 {
   "projectName": "copilot-learning",
   "createdAt": "2026-09-11",
-  "lastUpdated": "2026-10-06T13:00:00+02:00",
+  "lastUpdated": "2026-10-07T13:00:00+02:00",
   "environment": {
     "os": "Ubuntu 24.04.4 LTS",
     "copilotSubscription": "GitHub Copilot Business (Enterprise)"
@@ -76,6 +76,11 @@
           "topic": "Refactoring Workflows with Copilot",
           "completedDate": "2026-10-06",
           "lessonFile": "2026-10-06_refactoring-workflows-with-copilot.md"
+        },
+        {
+          "topic": "Test Generation Patterns with Copilot",
+          "completedDate": "2026-10-07",
+          "lessonFile": "2026-10-07_test-generation-patterns-with-copilot.md"
         }
       ]
     },
@@ -107,14 +112,6 @@
     }
   },
   "queue": [
-    {
-      "topic": "Test Generation Patterns with Copilot",
-      "source": "https://code.visualstudio.com/docs/agents/guides/test-code-with-ai",
-      "difficulty": "intermediate",
-      "section": "phase_2_vscode_integration",
-      "priority": 1,
-      "addedAt": "2026-10-03"
-    },
     {
       "topic": "Multi-File Edits with Copilot",
       "source": "https://code.visualstudio.com/docs/agents/run/review-code-edits",
@@ -211,8 +208,8 @@
     "timezone": "Europe/Rome"
   },
   "stats": {
-    "totalLessonsDelivered": 14,
-    "currentStreak": 14,
-    "lastLessonDate": "2026-10-06"
+    "totalLessonsDelivered": 15,
+    "currentStreak": 15,
+    "lastLessonDate": "2026-10-07"
   }
 }
