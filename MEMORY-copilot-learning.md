@@ -122,6 +122,13 @@ The payload carries that explanation inline (`this directory is written by the d
 
 **On `MEMORY-<project>.md` and the AGENTS.md tiers.** The Tier 1 "stage and notify, never auto-commit" rule covers the *agent workspace* files `MEMORY.md` and `USER.md`, which hold personal user context. `MEMORY-copilot-learning.md` is a project artifact in the project repo and is not in any tier — AGENTS.md describes it separately as project decisions and technical learnings. It is normal to commit it alongside the work that changed it. The 10-02 problem was not that it was committed, but that it was committed mid-edit by a job that did not know it was touching it.
 
+## Daily Job Git-Commit Drift (found 2026-10-08)
+
+- **Incident:** the daily job's 10-06, 10-07 and 10-08 runs committed on their own (`f375440`, `7754d19`, `c447222`). The payload had no commit step — the model improvised after reading git advice in the lesson's own source doc. Commits were scoped to named paths, nothing was ever pushed; the 10-06 commit swept two older untracked lessons (10-02, 10-05) into its commit.
+- **Siblings had the guard, copilot didn't:** openclaw-learning and ai-act-learning daily payloads both say in step 6 "Do not commit — the weekly research job commits lessons/." Both verified compliant (their lessons sit untracked). The copilot payload was the one missing the clause.
+- **Fix (2026-10-08, user-approved):** step 6 now carries that clause plus "do not run any git command in this run" and "never stage unrelated dirty files (MEMORY-*, README.md, earlier lesson files)". Read back and verified: single line changed, thinking/tools/schedule/delivery untouched. First test: 10-09 13:00 run.
+- The already-pushed commits were left as is — history is clean, no rewrite.
+
 ## Research Summary Filenames (decided 2026-10-03)
 
 **New summaries are `research_summary_YYYY-MM-DD.md` — no sequence number.** The payload previously hardcoded `01_research_summary_YYYY-MM-DD.md`, so all three existing summaries carry `01_`: the numbering never incremented and is now meaningless.
