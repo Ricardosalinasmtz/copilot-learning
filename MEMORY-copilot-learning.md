@@ -224,6 +224,15 @@ The 2026-10-02 batch of 8 research topics was recorded before these guards exist
 - `.gitignore` added 2026-10-02 covering `tmp/`, `trash/`, and OS/editor noise, matching the workspace convention that those directories are never committed. Before this the project had none — `tmp/` stayed clean only because it happened to be empty. Verified with `git check-ignore`.
 - Debug backups belong in `tmp/`. Check whether git already holds the same content before keeping one: the 2026-10-02 `progress.json` backup turned out byte-identical to commit `7e0d564`, so it was redundant and deleted.
 
+## Git Remote & Push (2026-10-08)
+
+- **Remote `origin`:** `git@github.com:Ricardosalinasmtz/copilot-learning.git` (added 2026-10-08). User supplied the HTTPS URL; the SSH form was used because this machine authenticates to GitHub with a key, not HTTPS. The GitHub repo was created empty, so the first push needed no `pull --rebase`.
+- **First push succeeded 2026-10-08 at `c447222`** (all local commits up to it, including review fixes `1a098eb`/`bc9cd38`/`89f0b3d` and daily lessons 14-16). Verified after push: `git fetch`, then `rev-parse main` == `rev-parse origin/main` == `c447222…`, `git status` clean at 0/0. Branch `main` tracks `origin/main`.
+- **SSH key:** `~/.ssh/id_ed25519_github_macbook` (comment `ricasrsm2705@gmail.com`, fingerprint `SHA256:3lhaskaZc6eaCAgHH4ScDzeTOeuMw9K/wfBqwV1urRk`), passphrase-protected. `~/.ssh/config` has a `Host github.com` block pointing `IdentityFile` at it with `IdentitiesOnly yes` (appended 2026-10-08; the Leonardo and Cineca GitLab blocks were left untouched). The block covers all `github.com` access for this user, which is intended — it is the user's GitHub key.
+- **Key must be unlocked in the agent before push:** `SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh ssh-add ~/.ssh/id_ed25519_github_macbook`, run by the user in their own terminal (passphrase entry is the user's action). Same explicit-socket requirement as the GitLab key in ai-act-learning: the agent my exec sessions read differs from the one the user's terminal `ssh-add` writes to. Without the socket prefix the key lands in the wrong agent and push fails with `Permission denied (publickey)`.
+- **gpg-agent drops the key after idle.** If a later push fails with `Permission denied (publickey)` but the key is registered and the config block exists, re-run the `ssh-add` line above before anything else.
+- **Push cadence at first push:** daily lesson runs had been committing per lesson + state (`f375440`, `7754d19`, `c447222` on 10-06..10-08), so the tree was clean. The weekly research job still makes its two staged commits and never pushes. Untracked files never reach `git push`, so leaving them is history-safe.
+
 ## Dedicated Delivery Sessions (2026-10-05)
 
 - Both jobs moved off Home (`agent:sokka-orchestrator:main`) to dedicated sessions in sidebar group `copilot-learning`:
