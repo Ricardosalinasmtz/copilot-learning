@@ -1,7 +1,7 @@
 {
   "projectName": "copilot-learning",
   "createdAt": "2026-09-11",
-  "lastUpdated": "2026-10-08T13:00:00+02:00",
+  "lastUpdated": "2026-10-09T14:35:00+02:00",
   "environment": {
     "os": "Ubuntu 24.04.4 LTS",
     "copilotSubscription": "GitHub Copilot Business (Enterprise)"
@@ -196,6 +196,30 @@
       "section": "phase_4_deep",
       "priority": 2,
       "addedAt": "2026-10-02"
+    },
+    {
+      "topic": "GitHub Copilot Policies for Enterprises and Organizations (AI Controls)",
+      "source": "https://docs.github.com/en/copilot/concepts/enterprise/policies",
+      "difficulty": "advanced",
+      "section": "phase_3_advanced",
+      "priority": 1,
+      "addedAt": "2026-10-09"
+    },
+    {
+      "topic": "Custom Agents (Agent Profiles for Shared, Team-Specific Workflows)",
+      "source": "https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-custom-agents",
+      "difficulty": "advanced",
+      "section": "phase_3_advanced",
+      "priority": 1,
+      "addedAt": "2026-10-09"
+    },
+    {
+      "topic": "Prompt Files for Generating Documentation (e.g., /document-api for OpenAPI specs)",
+      "source": "https://code.visualstudio.com/docs/agent-customization/prompt-files",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-09"
     }
   ],
   "settings": {
