@@ -1,7 +1,7 @@
 {
   "projectName": "copilot-learning",
   "createdAt": "2026-09-11",
-  "lastUpdated": "2026-10-09T14:35:00+02:00",
+  "lastUpdated": "2026-10-16T12:30:00+02:00",
   "environment": {
     "os": "Ubuntu 24.04.4 LTS",
     "copilotSubscription": "GitHub Copilot Business (Enterprise)"
@@ -10,7 +10,7 @@
     "vscode": "1.139.1",
     "copilot": "built-in"
   },
-  "currentPhase": "phase_2_vscode_integration",
+  "currentPhase": "phase_3_advanced",
   "phases": {
     "phase_1_core": {
       "name": "Core Copilot Features",
@@ -50,7 +50,7 @@
     },
     "phase_2_vscode_integration": {
       "name": "VSCode Integration",
-      "status": "in_progress",
+      "status": "completed",
       "completedTopics": [
         {
           "topic": "Copilot in Integrated Terminal",
@@ -86,6 +86,11 @@
           "topic": "Multi-File Edits with Copilot",
           "completedDate": "2026-10-08",
           "lessonFile": "2026-10-08_multi-file-edits-with-copilot.md"
+        },
+        {
+          "topic": "Copilot Edits Mode",
+          "completedDate": "2026-10-09",
+          "lessonFile": "2026-10-09_copilot-edits-mode.md"
         }
       ]
     },
@@ -107,40 +112,37 @@
           "topic": "Copilot Code Review with Agentic Capabilities (Full Context Analysis, Cloud Agent Handoff)",
           "completedDate": "2026-10-02",
           "lessonFile": "2026-10-02_copilot-code-review-agentic-capabilities.md"
+        },
+        {
+          "topic": "GitHub Copilot Policies for Enterprises and Organizations (AI Controls)",
+          "completedDate": "2026-10-12",
+          "lessonFile": "2026-10-12_copilot-policies-enterprises-organizations.md"
+        },
+        {
+          "topic": "Custom Agents (Agent Profiles for Shared, Team-Specific Workflows)",
+          "completedDate": "2026-10-13",
+          "lessonFile": "2026-10-13_custom-agents-agent-profiles-team-workflows.md"
         }
       ]
     },
     "phase_4_deep": {
       "name": "Deep Customization",
-      "status": "locked",
-      "completedTopics": []
+      "status": "in_progress",
+      "completedTopics": [
+        {
+          "topic": "Agent Hooks for Copilot (Custom Automation Triggers)",
+          "completedDate": "2026-10-14",
+          "lessonFile": "2026-10-14_agent-hooks-custom-automation-triggers.md"
+        },
+        {
+          "topic": "Model Context Protocol (MCP) and GitHub Copilot",
+          "completedDate": "2026-10-15",
+          "lessonFile": "2026-10-15_mcp-model-context-protocol.md"
+        }
+      ]
     }
   },
   "queue": [
-    {
-      "topic": "Copilot Edits Mode",
-      "source": "https://code.visualstudio.com/docs/agents/overview",
-      "difficulty": "intermediate",
-      "section": "phase_2_vscode_integration",
-      "priority": 1,
-      "addedAt": "2026-10-03"
-    },
-    {
-      "topic": "Agent Hooks for Copilot (Custom Automation Triggers)",
-      "source": "https://docs.github.com/en/copilot/concepts/agents/hooks",
-      "difficulty": "advanced",
-      "section": "phase_4_deep",
-      "priority": 2,
-      "addedAt": "2026-09-18"
-    },
-    {
-      "topic": "Model Context Protocol (MCP) and GitHub Copilot",
-      "source": "https://docs.github.com/en/copilot/concepts/context/mcp",
-      "difficulty": "advanced",
-      "section": "phase_4_deep",
-      "priority": 2,
-      "addedAt": "2026-09-18"
-    },
     {
       "topic": "GitHub Agentic Workflows in GitHub Actions (Natural Language Automation, Safe Outputs)",
       "source": "https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows",
@@ -198,28 +200,36 @@
       "addedAt": "2026-10-02"
     },
     {
-      "topic": "GitHub Copilot Policies for Enterprises and Organizations (AI Controls)",
-      "source": "https://docs.github.com/en/copilot/concepts/enterprise/policies",
-      "difficulty": "advanced",
-      "section": "phase_3_advanced",
-      "priority": 1,
-      "addedAt": "2026-10-09"
-    },
-    {
-      "topic": "Custom Agents (Agent Profiles for Shared, Team-Specific Workflows)",
-      "source": "https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-custom-agents",
-      "difficulty": "advanced",
-      "section": "phase_3_advanced",
-      "priority": 1,
-      "addedAt": "2026-10-09"
-    },
-    {
       "topic": "Prompt Files for Generating Documentation (e.g., /document-api for OpenAPI specs)",
       "source": "https://code.visualstudio.com/docs/agent-customization/prompt-files",
       "difficulty": "intermediate",
       "section": "phase_3_advanced",
       "priority": 2,
       "addedAt": "2026-10-09"
+    },
+    {
+      "topic": "Copilot Automations (Scheduled and Event-Triggered Cloud Agent Runs)",
+      "source": "https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automations",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 1,
+      "addedAt": "2026-10-16"
+    },
+    {
+      "topic": "Agent Management (Centralized Control of Parallel Agent Sessions)",
+      "source": "https://docs.github.com/en/copilot/concepts/agent-capabilities/choosing-and-delegating-agent-work/agent-management",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-16"
+    },
+    {
+      "topic": "Remote Control of Copilot CLI Sessions (Steer from GitHub.com or Mobile)",
+      "source": "https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-remote-control",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-16"
     }
   ],
   "settings": {
@@ -229,8 +239,8 @@
     "timezone": "Europe/Rome"
   },
   "stats": {
-    "totalLessonsDelivered": 16,
-    "currentStreak": 16,
-    "lastLessonDate": "2026-10-08"
+    "totalLessonsDelivered": 21,
+    "currentStreak": 21,
+    "lastLessonDate": "2026-10-15"
   }
 }
