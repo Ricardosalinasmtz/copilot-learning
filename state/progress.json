@@ -1,13 +1,13 @@
 {
   "projectName": "copilot-learning",
   "createdAt": "2026-09-11",
-  "lastUpdated": "2026-10-16T12:30:00+02:00",
+  "lastUpdated": "2026-10-23T12:31:00+02:00",
   "environment": {
     "os": "Ubuntu 24.04.4 LTS",
     "copilotSubscription": "GitHub Copilot Business (Enterprise)"
   },
   "currentVersion": {
-    "vscode": "1.139.1",
+    "vscode": "1.142.0",
     "copilot": "built-in"
   },
   "currentPhase": "phase_3_advanced",
@@ -122,6 +122,26 @@
           "topic": "Custom Agents (Agent Profiles for Shared, Team-Specific Workflows)",
           "completedDate": "2026-10-13",
           "lessonFile": "2026-10-13_custom-agents-agent-profiles-team-workflows.md"
+        },
+        {
+          "topic": "Copilot Automations (Scheduled and Event-Triggered Cloud Agent Runs)",
+          "completedDate": "2026-10-16",
+          "lessonFile": "2026-10-16_copilot-automations-scheduled-event-triggered-cloud-runs.md"
+        },
+        {
+          "topic": "GitHub Agentic Workflows in GitHub Actions (Natural Language Automation, Safe Outputs)",
+          "completedDate": "2026-10-19",
+          "lessonFile": "2026-10-19_github-agentic-workflows-in-github-actions.md"
+        },
+        {
+          "topic": "Dynamic Workflows in Copilot (Reusable Multi-Step Processes with Agents)",
+          "completedDate": "2026-10-20",
+          "lessonFile": "2026-10-20_dynamic-workflows-in-copilot.md"
+        },
+        {
+          "topic": "GitHub Copilot CLI Deep Dive (Interactive/Programmatic Modes, Plan Mode, Autopilot)",
+          "completedDate": "2026-10-21",
+          "lessonFile": "2026-10-21_github-copilot-cli-deep-dive.md"
         }
       ]
     },
@@ -138,43 +158,16 @@
           "topic": "Model Context Protocol (MCP) and GitHub Copilot",
           "completedDate": "2026-10-15",
           "lessonFile": "2026-10-15_mcp-model-context-protocol.md"
+        },
+        {
+          "topic": "Copilot CLI /fleet Command (Parallel Task Execution with Subagents)",
+          "completedDate": "2026-10-22",
+          "lessonFile": "2026-10-22_copilot-cli-fleet-command-parallel-subagents.md"
         }
       ]
     }
   },
   "queue": [
-    {
-      "topic": "GitHub Agentic Workflows in GitHub Actions (Natural Language Automation, Safe Outputs)",
-      "source": "https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows",
-      "difficulty": "advanced",
-      "section": "phase_3_advanced",
-      "priority": 2,
-      "addedAt": "2026-10-02"
-    },
-    {
-      "topic": "Dynamic Workflows in Copilot (Reusable Multi-Step Processes with Agents)",
-      "source": "https://docs.github.com/en/copilot/concepts/agents/dynamic-workflows",
-      "difficulty": "advanced",
-      "section": "phase_3_advanced",
-      "priority": 2,
-      "addedAt": "2026-10-02"
-    },
-    {
-      "topic": "GitHub Copilot CLI Deep Dive (Interactive/Programmatic Modes, Plan Mode, Autopilot)",
-      "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-copilot-cli",
-      "difficulty": "intermediate",
-      "section": "phase_3_advanced",
-      "priority": 2,
-      "addedAt": "2026-10-02"
-    },
-    {
-      "topic": "Copilot CLI /fleet Command (Parallel Task Execution with Subagents)",
-      "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/fleet",
-      "difficulty": "advanced",
-      "section": "phase_4_deep",
-      "priority": 2,
-      "addedAt": "2026-10-02"
-    },
     {
       "topic": "Copilot CLI /research Command (In-Depth Research Agent with Reports)",
       "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/research",
@@ -208,14 +201,6 @@
       "addedAt": "2026-10-09"
     },
     {
-      "topic": "Copilot Automations (Scheduled and Event-Triggered Cloud Agent Runs)",
-      "source": "https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automations",
-      "difficulty": "intermediate",
-      "section": "phase_3_advanced",
-      "priority": 1,
-      "addedAt": "2026-10-16"
-    },
-    {
       "topic": "Agent Management (Centralized Control of Parallel Agent Sessions)",
       "source": "https://docs.github.com/en/copilot/concepts/agent-capabilities/choosing-and-delegating-agent-work/agent-management",
       "difficulty": "intermediate",
@@ -230,6 +215,30 @@
       "section": "phase_3_advanced",
       "priority": 2,
       "addedAt": "2026-10-16"
+    },
+    {
+      "topic": "Agent Harnesses and the Agent Host (Copilot Harness, Background Sessions Across Windows)",
+      "source": "https://code.visualstudio.com/docs/agents/run/agent-harnesses",
+      "difficulty": "intermediate",
+      "section": "phase_2_vscode_integration",
+      "priority": 1,
+      "addedAt": "2026-10-23"
+    },
+    {
+      "topic": "Sandboxing Copilot Agent Sessions and Enterprise Permission Policies",
+      "source": "https://code.visualstudio.com/docs/agents/run/agent-sandboxing",
+      "difficulty": "advanced",
+      "section": "phase_3_advanced",
+      "priority": 1,
+      "addedAt": "2026-10-23"
+    },
+    {
+      "topic": "Canvases: Interactive Collaboration Surfaces with Agents (Canvas Extensions, /create-canvas)",
+      "source": "https://docs.github.com/en/copilot/how-tos/github-copilot-app/working-with-canvas-extensions",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-23"
     }
   ],
   "settings": {
@@ -239,8 +248,8 @@
     "timezone": "Europe/Rome"
   },
   "stats": {
-    "totalLessonsDelivered": 21,
-    "currentStreak": 21,
-    "lastLessonDate": "2026-10-15"
+    "totalLessonsDelivered": 26,
+    "currentStreak": 26,
+    "lastLessonDate": "2026-10-22"
   }
 }

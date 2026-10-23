@@ -10,7 +10,13 @@
       "vscode": "1.139.1",
       "copilot": "built-in",
       "detectedAt": "2026-10-02",
-      "notes": "Version bump 1.136.1 → 1.139.1. New features detected: GitHub Agentic Workflows (public preview), dynamic workflows, Copilot CLI /fleet parallel execution, /research command, BYOK support, code review agentic capabilities, CLI extensions, computer use in CLI."
+      "notes": "Version bump 1.136.1 \u2192 1.139.1. New features detected: GitHub Agentic Workflows (public preview), dynamic workflows, Copilot CLI /fleet parallel execution, /research command, BYOK support, code review agentic capabilities, CLI extensions, computer use in CLI."
+    },
+    {
+      "vscode": "1.142.0",
+      "copilot": "built-in",
+      "detectedAt": "2026-10-23",
+      "notes": "Version bump 1.139.1 -> 1.142.0 (released 2026-10-14). New features: Copilot harness (Copilot SDK, Agent Host, progressive default rollout, background sessions across editor + Agents window), Canvases preview (interactive collaboration surfaces, /create-canvas), move chats between folders/worktrees, agent sandboxing + enterprise permission policies (managed settings, per-mode permission controls), redesigned model picker (Copilot + BYOK, effort levels, context windows), Markdown editor improvements."
     }
   ]
 }
