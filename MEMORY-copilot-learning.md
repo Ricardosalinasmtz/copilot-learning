@@ -240,7 +240,7 @@ The 2026-10-02 batch of 8 research topics was recorded before these guards exist
 - **gpg-agent drops the key after idle.** If a later push fails with `Permission denied (publickey)` but the key is registered and the config block exists, re-run the `ssh-add` line above before anything else.
 - **Push cadence at first push:** daily lesson runs had been committing per lesson + state (`f375440`, `7754d19`, `c447222` on 10-06..10-08), so the tree was clean. The weekly research job still makes its two staged commits and never pushes. Untracked files never reach `git push`, so leaving them is history-safe.
 
-## Dedicated Delivery Sessions (2026-10-05)
+## Dedicated Delivery Sessions (2026-10-05) — superseded 2026-10-19, see "Delivery switched to `none`" below
 
 - Both jobs moved off Home (`agent:sokka-orchestrator:main`) to dedicated sessions in sidebar group `copilot-learning`:
   - Daily lesson `c5b85c26` → **Copilot Daily Learning** `agent:sokka-orchestrator:dashboard:c8cb22e8-93e8-4991-8948-0f6bfd19d7f6`
@@ -253,6 +253,22 @@ The 2026-10-02 batch of 8 research topics was recorded before these guards exist
 - **Live test passed 2026-10-05 13:00:** run `ok`, `delivered`, 76 s; lesson 13 ("Debugging Assistance with Copilot") landed in Copilot Daily Learning, not Home.
 - **Daily job thinking raised low → medium (2026-10-05)**, set by the user after the test; read back as `payload.thinking: "medium"`, nothing else changed. Reason: past failures were reasoning slips (phase guessing, premature phase completion, queue overwrite), not formatting. **Weekly job also raised low → medium (2026-10-05)** by the user, read back as `payload.thinking: "medium"`. Reason: per docs/tools/subagents.md, native sub-agents inherit the caller turn's thinking unless `agents.*.subagents.thinking` is set (it isn't), so zuko-researcher was running URL verification, queue append and staged commits at low.
 - **Scheduled check runs can't inspect other jobs:** the 13:10 verify run got "not found" on the daily job, because automation runs only see their own job. Run cross-job verification from an interactive chat turn instead.
+
+## Delivery switched to `none` (user change 2026-10-19, NOT yet committed)
+
+- **Trigger:** on 2026-10-19 the AI Act jobs (same host, same gateway) ended with status `error` "Channel is required (no configured channels detected)…" after the 10-18 22:56 gateway restart. Only the delivery step failed; the work (lesson, research, commits) was completed. Details are in `ai-act-learning/MEMORY-ai-act-learning.md`, section "Delivery failure 2026-10-19". `openclaw channels list` (checked 2026-10-19) shows no configured chat channel on this host.
+- **Change made by the user (2026-10-19):** both Copilot jobs (daily `c5b85c26-…`, weekly `9960fa77-…`) set to `delivery.mode: none` (they were `announce`) and `sessionTarget: isolated` (they were `current`, pointing at the dedicated sessions). Read back today: daily and weekly both `delivery: {mode: none, bestEffort: false}`, `sessionTarget: isolated`; schedule, `thinking: medium`, tools and payload text unchanged (step 6 no-commit clause still present).
+- **What the Copilot jobs themselves recorded:** no error. Runs 10-13 to 10-16 (daily) and 10-16 (weekly) are `ok` / `delivered`, but each carries `fallbackUsed: true` and `resolved.error: "Channel is required when delivery.channel=last has no previous channel."`. So the channel problem was already there; it only turned into a run `error` for the AI Act jobs after the restart. The Copilot jobs had no scheduled run between the restart and the user's edit that I can see (explained below: the daily job was deactivated).
+- **Missed 10-19 13:00 run explained (user, 2026-10-19):** the daily job has no scheduled 10-19 entry because the user had deactivated the automation after the other automations failed, then re-enabled it with the edit (`scheduleActivatedAtMs` 17:56 matches). It was not a restart or edit side effect. Consequence: today's lesson came from the 17:56 manual run, and no lesson was skipped.
+- **Manual test after the change (user, 2026-10-19 17:56:42):** daily job run manually. Result: `ok`, `succeeded`, 236 s, `delivered: false`, `deliveryStatus: not-requested`, nothing posted to Copilot Daily Learning (expected with `none`). Work completed: `lessons/2026-10-19_github-agentic-workflows-in-github-actions.md` written (17:59), `progress.json` updated (lesson 23, streak 23, `lastLessonDate` 2026-10-19, queue 9). No git commit was made by the run (latest commit is still `34c2739`, 10-16), so the step 6 no-commit clause held. Run id `manual:c5b85c26-…1792425402052:7`.
+- **Consequences of `none`:**
+  - Lessons are not pushed to any chat. They exist as files in `lessons/`, and as the (truncated) summary in the run history.
+  - Dedicated sessions Copilot Daily Learning and Copilot Weekly Research no longer receive anything. Each run is a fresh isolated session, so the "old lessons in reused history pull the format back" risk no longer applies. The job owner is still the old setup session `…:dashboard:09f0d840-…`; verify before archiving it.
+  - Weekly step 3 "Deliver: report the zuko summary to the user" now has no recipient. The record of a research run is its commits, `docs/planning/research_summary_YYYY-MM-DD.md` and the run history.
+- **Confirmed on schedule (checked 2026-10-26):** daily runs 10-20 to 10-23 (13:00) and the weekly run 10-23 (12:30) all finished `ok` with `deliveryStatus: not-requested` and no error. The weekly run made its two commits (`c983dc3`, `e96dc34`). Lesson 27 (`lessons/2026-10-23_agent-harnesses-and-agent-host.md`) and its `progress.json` update are uncommitted, as designed, until the weekly run on Fri 2026-10-30.
+- **Was not tested (now closed):** the weekly job with `none` and the daily job on its schedule.
+- **Health check for future runs (all met 2026-10-20 to 10-23):** status `ok` and `deliveryStatus` `not-requested` with no error; lesson file and `progress.json` updated; weekly makes its two commits; no commit from the daily run. Do not read a missing chat message as a failure.
+- **Not chosen:** `delivery.bestEffort: true` (hides the error without choosing a channel).
 
 ## Operational Notes
 
