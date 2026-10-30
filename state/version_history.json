@@ -17,6 +17,12 @@
       "copilot": "built-in",
       "detectedAt": "2026-10-23",
       "notes": "Version bump 1.139.1 -> 1.142.0 (released 2026-10-14). New features: Copilot harness (Copilot SDK, Agent Host, progressive default rollout, background sessions across editor + Agents window), Canvases preview (interactive collaboration surfaces, /create-canvas), move chats between folders/worktrees, agent sandboxing + enterprise permission policies (managed settings, per-mode permission controls), redesigned model picker (Copilot + BYOK, effort levels, context windows), Markdown editor improvements."
+    },
+    {
+      "vscode": "1.143.1",
+      "copilot": "built-in",
+      "detectedAt": "2026-10-30",
+      "notes": "Version bump 1.142.0 -> 1.143.1 (stable released 2026-10-28). New features: Copilot harness now default for new sessions; model comparisons (Agent Bake-Off, Preview) on by default in the Agents window; on-device models (MAI Code 1.1 Flash, Experimental, llama.cpp); worktree storage cleanup for inactive agent sessions (Experimental); multi-diff editor file list (Experimental); BYOK OpenAI Live model for Voice Mode (Preview); sandbox CA certificate trust management (Sandbox: Manage Trusted CA) and per-session sandboxing toggle when policy permits bypass; enterprise managed model defaults, OTel telemetry.headersProvider dynamic headers, auto-installed managed plugins, Local harness retirement controls. Next stable 1.144.0 (released 2026-10-28) already announced: cloud sessions, Copilot Fusion, image generation in chat, computer use, cloud automations, AHP v1.0."
     }
   ]
 }

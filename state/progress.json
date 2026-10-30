@@ -1,13 +1,13 @@
 {
   "projectName": "copilot-learning",
   "createdAt": "2026-09-11",
-  "lastUpdated": "2026-10-23T12:31:00+02:00",
+  "lastUpdated": "2026-10-30T12:30:00+02:00",
   "environment": {
     "os": "Ubuntu 24.04.4 LTS",
     "copilotSubscription": "GitHub Copilot Business (Enterprise)"
   },
   "currentVersion": {
-    "vscode": "1.142.0",
+    "vscode": "1.143.1",
     "copilot": "built-in"
   },
   "currentPhase": "phase_3_advanced",
@@ -91,6 +91,11 @@
           "topic": "Copilot Edits Mode",
           "completedDate": "2026-10-09",
           "lessonFile": "2026-10-09_copilot-edits-mode.md"
+        },
+        {
+          "topic": "Agent Harnesses and the Agent Host (Copilot Harness, Background Sessions Across Windows)",
+          "completedDate": "2026-10-23",
+          "lessonFile": "2026-10-23_agent-harnesses-and-agent-host.md"
         }
       ]
     },
@@ -142,6 +147,16 @@
           "topic": "GitHub Copilot CLI Deep Dive (Interactive/Programmatic Modes, Plan Mode, Autopilot)",
           "completedDate": "2026-10-21",
           "lessonFile": "2026-10-21_github-copilot-cli-deep-dive.md"
+        },
+        {
+          "topic": "Sandboxing Copilot Agent Sessions and Enterprise Permission Policies",
+          "completedDate": "2026-10-26",
+          "lessonFile": "2026-10-26_sandboxing-copilot-agent-sessions-enterprise-policies.md"
+        },
+        {
+          "topic": "Prompt Files for Generating Documentation (e.g., /document-api for OpenAPI specs)",
+          "completedDate": "2026-10-29",
+          "lessonFile": "2026-10-29_prompt-files-for-generating-documentation.md"
         }
       ]
     },
@@ -163,6 +178,16 @@
           "topic": "Copilot CLI /fleet Command (Parallel Task Execution with Subagents)",
           "completedDate": "2026-10-22",
           "lessonFile": "2026-10-22_copilot-cli-fleet-command-parallel-subagents.md"
+        },
+        {
+          "topic": "Bring Your Own Key (BYOK) for GitHub Copilot (Local & Enterprise Custom Models)",
+          "completedDate": "2026-10-27",
+          "lessonFile": "2026-10-27_bring-your-own-key-byok.md"
+        },
+        {
+          "topic": "Copilot CLI Extensions (Custom Tools & Slash Commands via SDK)",
+          "completedDate": "2026-10-28",
+          "lessonFile": "2026-10-28_copilot-cli-extensions-custom-tools-slash-commands.md"
         }
       ]
     }
@@ -175,30 +200,6 @@
       "section": "phase_4_deep",
       "priority": 3,
       "addedAt": "2026-10-02"
-    },
-    {
-      "topic": "Bring Your Own Key (BYOK) for GitHub Copilot (Local & Enterprise Custom Models)",
-      "source": "https://docs.github.com/en/copilot/concepts/models/bring-your-own-key",
-      "difficulty": "advanced",
-      "section": "phase_4_deep",
-      "priority": 2,
-      "addedAt": "2026-10-02"
-    },
-    {
-      "topic": "Copilot CLI Extensions (Custom Tools & Slash Commands via SDK)",
-      "source": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-cli-extensions",
-      "difficulty": "advanced",
-      "section": "phase_4_deep",
-      "priority": 2,
-      "addedAt": "2026-10-02"
-    },
-    {
-      "topic": "Prompt Files for Generating Documentation (e.g., /document-api for OpenAPI specs)",
-      "source": "https://code.visualstudio.com/docs/agent-customization/prompt-files",
-      "difficulty": "intermediate",
-      "section": "phase_3_advanced",
-      "priority": 2,
-      "addedAt": "2026-10-09"
     },
     {
       "topic": "Agent Management (Centralized Control of Parallel Agent Sessions)",
@@ -217,28 +218,68 @@
       "addedAt": "2026-10-16"
     },
     {
-      "topic": "Agent Harnesses and the Agent Host (Copilot Harness, Background Sessions Across Windows)",
-      "source": "https://code.visualstudio.com/docs/agents/run/agent-harnesses",
-      "difficulty": "intermediate",
-      "section": "phase_2_vscode_integration",
-      "priority": 1,
-      "addedAt": "2026-10-23"
-    },
-    {
-      "topic": "Sandboxing Copilot Agent Sessions and Enterprise Permission Policies",
-      "source": "https://code.visualstudio.com/docs/agents/run/agent-sandboxing",
-      "difficulty": "advanced",
-      "section": "phase_3_advanced",
-      "priority": 1,
-      "addedAt": "2026-10-23"
-    },
-    {
       "topic": "Canvases: Interactive Collaboration Surfaces with Agents (Canvas Extensions, /create-canvas)",
       "source": "https://docs.github.com/en/copilot/how-tos/github-copilot-app/working-with-canvas-extensions",
       "difficulty": "intermediate",
       "section": "phase_3_advanced",
       "priority": 2,
       "addedAt": "2026-10-23"
+    },
+    {
+      "topic": "Model Comparisons and the Agent Bake-Off (Running the Same Prompt Across Models and Harnesses)",
+      "source": "https://code.visualstudio.com/docs/agents/run/compare-models",
+      "difficulty": "intermediate",
+      "section": "phase_4_deep",
+      "priority": 1,
+      "addedAt": "2026-10-30"
+    },
+    {
+      "topic": "On-Device Models (Running Copilot's MAI Code 1.1 Flash Locally with llama.cpp)",
+      "source": "https://code.visualstudio.com/docs/agent-customization/language-models",
+      "difficulty": "intermediate",
+      "section": "phase_4_deep",
+      "priority": 1,
+      "addedAt": "2026-10-30"
+    },
+    {
+      "topic": "Bring Your Own OpenAI Key for Voice Mode (Live Voice Models with BYOK)",
+      "source": "https://code.visualstudio.com/docs/configure/accessibility/voice",
+      "difficulty": "intermediate",
+      "section": "phase_4_deep",
+      "priority": 2,
+      "addedAt": "2026-10-30"
+    },
+    {
+      "topic": "Enterprise AI Settings in VS Code (Managed Model Defaults, OTel Dynamic Headers, Managed Plugins, Local Harness Retention)",
+      "source": "https://code.visualstudio.com/docs/enterprise/manage-ai-settings",
+      "difficulty": "advanced",
+      "section": "phase_3_advanced",
+      "priority": 1,
+      "addedAt": "2026-10-30"
+    },
+    {
+      "topic": "Reclaiming Storage from Inactive Agent Session Worktrees (Worktree Cleanup)",
+      "source": "https://code.visualstudio.com/docs/agents/run/sessions/manage-sessions",
+      "difficulty": "beginner",
+      "section": "phase_2_vscode_integration",
+      "priority": 1,
+      "addedAt": "2026-10-30"
+    },
+    {
+      "topic": "Multi-Diff Editor File List (Navigating Agent Session, Commit, and Stash Changes)",
+      "source": "https://code.visualstudio.com/docs/agents/run/review-code-edits",
+      "difficulty": "beginner",
+      "section": "phase_2_vscode_integration",
+      "priority": 2,
+      "addedAt": "2026-10-30"
+    },
+    {
+      "topic": "Sandbox CA Certificate Trust and Per-Session Sandboxing Toggles",
+      "source": "https://code.visualstudio.com/docs/agents/run/agent-sandboxing",
+      "difficulty": "advanced",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-30"
     }
   ],
   "settings": {
@@ -248,8 +289,8 @@
     "timezone": "Europe/Rome"
   },
   "stats": {
-    "totalLessonsDelivered": 26,
-    "currentStreak": 26,
-    "lastLessonDate": "2026-10-22"
+    "totalLessonsDelivered": 31,
+    "currentStreak": 31,
+    "lastLessonDate": "2026-10-29"
   }
 }
