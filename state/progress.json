@@ -1,13 +1,13 @@
 {
   "projectName": "copilot-learning",
   "createdAt": "2026-09-11",
-  "lastUpdated": "2026-10-30T12:30:00+02:00",
+  "lastUpdated": "2026-11-06T12:40:49+01:00",
   "environment": {
     "os": "Ubuntu 24.04.4 LTS",
     "copilotSubscription": "GitHub Copilot Business (Enterprise)"
   },
   "currentVersion": {
-    "vscode": "1.143.1",
+    "vscode": "1.144.0",
     "copilot": "built-in"
   },
   "currentPhase": "phase_3_advanced",
@@ -96,6 +96,11 @@
           "topic": "Agent Harnesses and the Agent Host (Copilot Harness, Background Sessions Across Windows)",
           "completedDate": "2026-10-23",
           "lessonFile": "2026-10-23_agent-harnesses-and-agent-host.md"
+        },
+        {
+          "topic": "Reclaiming Storage from Inactive Agent Session Worktrees (Worktree Cleanup)",
+          "completedDate": "2026-11-04",
+          "lessonFile": "2026-11-04_reclaiming-storage-from-inactive-session-worktrees.md"
         }
       ]
     },
@@ -157,6 +162,16 @@
           "topic": "Prompt Files for Generating Documentation (e.g., /document-api for OpenAPI specs)",
           "completedDate": "2026-10-29",
           "lessonFile": "2026-10-29_prompt-files-for-generating-documentation.md"
+        },
+        {
+          "topic": "Enterprise AI Settings in VS Code (Managed Model Defaults, OTel Dynamic Headers, Managed Plugins, Local Harness Retention)",
+          "completedDate": "2026-11-03",
+          "lessonFile": "2026-11-03_enterprise-ai-settings-in-vs-code.md"
+        },
+        {
+          "topic": "Agent Management (Centralized Control of Parallel Agent Sessions)",
+          "completedDate": "2026-11-05",
+          "lessonFile": "2026-11-05_agent-management-centralized-control.md"
         }
       ]
     },
@@ -188,6 +203,16 @@
           "topic": "Copilot CLI Extensions (Custom Tools & Slash Commands via SDK)",
           "completedDate": "2026-10-28",
           "lessonFile": "2026-10-28_copilot-cli-extensions-custom-tools-slash-commands.md"
+        },
+        {
+          "topic": "Model Comparisons and the Agent Bake-Off (Running the Same Prompt Across Models and Harnesses)",
+          "completedDate": "2026-10-30",
+          "lessonFile": "2026-10-30_model-comparisons-and-the-agent-bake-off.md"
+        },
+        {
+          "topic": "On-Device Models (Running Copilot's MAI Code 1.1 Flash Locally with llama.cpp)",
+          "completedDate": "2026-11-02",
+          "lessonFile": "2026-11-02_on-device-models-mai-code-flash-llama-cpp.md"
         }
       ]
     }
@@ -200,14 +225,6 @@
       "section": "phase_4_deep",
       "priority": 3,
       "addedAt": "2026-10-02"
-    },
-    {
-      "topic": "Agent Management (Centralized Control of Parallel Agent Sessions)",
-      "source": "https://docs.github.com/en/copilot/concepts/agent-capabilities/choosing-and-delegating-agent-work/agent-management",
-      "difficulty": "intermediate",
-      "section": "phase_3_advanced",
-      "priority": 2,
-      "addedAt": "2026-10-16"
     },
     {
       "topic": "Remote Control of Copilot CLI Sessions (Steer from GitHub.com or Mobile)",
@@ -226,43 +243,11 @@
       "addedAt": "2026-10-23"
     },
     {
-      "topic": "Model Comparisons and the Agent Bake-Off (Running the Same Prompt Across Models and Harnesses)",
-      "source": "https://code.visualstudio.com/docs/agents/run/compare-models",
-      "difficulty": "intermediate",
-      "section": "phase_4_deep",
-      "priority": 1,
-      "addedAt": "2026-10-30"
-    },
-    {
-      "topic": "On-Device Models (Running Copilot's MAI Code 1.1 Flash Locally with llama.cpp)",
-      "source": "https://code.visualstudio.com/docs/agent-customization/language-models",
-      "difficulty": "intermediate",
-      "section": "phase_4_deep",
-      "priority": 1,
-      "addedAt": "2026-10-30"
-    },
-    {
       "topic": "Bring Your Own OpenAI Key for Voice Mode (Live Voice Models with BYOK)",
       "source": "https://code.visualstudio.com/docs/configure/accessibility/voice",
       "difficulty": "intermediate",
       "section": "phase_4_deep",
       "priority": 2,
-      "addedAt": "2026-10-30"
-    },
-    {
-      "topic": "Enterprise AI Settings in VS Code (Managed Model Defaults, OTel Dynamic Headers, Managed Plugins, Local Harness Retention)",
-      "source": "https://code.visualstudio.com/docs/enterprise/manage-ai-settings",
-      "difficulty": "advanced",
-      "section": "phase_3_advanced",
-      "priority": 1,
-      "addedAt": "2026-10-30"
-    },
-    {
-      "topic": "Reclaiming Storage from Inactive Agent Session Worktrees (Worktree Cleanup)",
-      "source": "https://code.visualstudio.com/docs/agents/run/sessions/manage-sessions",
-      "difficulty": "beginner",
-      "section": "phase_2_vscode_integration",
-      "priority": 1,
       "addedAt": "2026-10-30"
     },
     {
@@ -280,6 +265,30 @@
       "section": "phase_3_advanced",
       "priority": 2,
       "addedAt": "2026-10-30"
+    },
+    {
+      "topic": "GitHub Copilot Fusion (Automatic Model Routing and Multi-Model Orchestration)",
+      "source": "https://docs.github.com/en/copilot/concepts/models/copilot-fusion",
+      "difficulty": "intermediate",
+      "section": "phase_4_deep",
+      "priority": 1,
+      "addedAt": "2026-11-06"
+    },
+    {
+      "topic": "Copilot Cloud Sessions (Running Agent Tasks on Managed Cloud Compute)",
+      "source": "https://code.visualstudio.com/docs/agents/run/cloud-sandbox-sessions",
+      "difficulty": "intermediate",
+      "section": "phase_2_vscode_integration",
+      "priority": 1,
+      "addedAt": "2026-11-06"
+    },
+    {
+      "topic": "Assisted Permissions (LLM Risk Assessment for Automatic Tool Call Approvals)",
+      "source": "https://code.visualstudio.com/docs/agents/run/approvals",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 1,
+      "addedAt": "2026-11-06"
     }
   ],
   "settings": {
@@ -289,8 +298,8 @@
     "timezone": "Europe/Rome"
   },
   "stats": {
-    "totalLessonsDelivered": 31,
-    "currentStreak": 31,
-    "lastLessonDate": "2026-10-29"
+    "totalLessonsDelivered": 36,
+    "currentStreak": 36,
+    "lastLessonDate": "2026-11-05"
   }
 }
