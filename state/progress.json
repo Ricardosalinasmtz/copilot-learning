@@ -1,7 +1,7 @@
 {
   "projectName": "copilot-learning",
   "createdAt": "2026-09-11",
-  "lastUpdated": "2026-11-06T12:40:49+01:00",
+  "lastUpdated": "2026-11-13T12:35:00+01:00",
   "environment": {
     "os": "Ubuntu 24.04.4 LTS",
     "copilotSubscription": "GitHub Copilot Business (Enterprise)"
@@ -101,6 +101,11 @@
           "topic": "Reclaiming Storage from Inactive Agent Session Worktrees (Worktree Cleanup)",
           "completedDate": "2026-11-04",
           "lessonFile": "2026-11-04_reclaiming-storage-from-inactive-session-worktrees.md"
+        },
+        {
+          "topic": "Copilot Cloud Sessions (Running Agent Tasks on Managed Cloud Compute)",
+          "completedDate": "2026-11-09",
+          "lessonFile": "2026-11-09_copilot-cloud-sessions.md"
         }
       ]
     },
@@ -172,6 +177,16 @@
           "topic": "Agent Management (Centralized Control of Parallel Agent Sessions)",
           "completedDate": "2026-11-05",
           "lessonFile": "2026-11-05_agent-management-centralized-control.md"
+        },
+        {
+          "topic": "Assisted Permissions (LLM Risk Assessment for Automatic Tool Call Approvals)",
+          "completedDate": "2026-11-10",
+          "lessonFile": "2026-11-10_assisted-permissions.md"
+        },
+        {
+          "topic": "Remote Control of Copilot CLI Sessions (Steer from GitHub.com or Mobile)",
+          "completedDate": "2026-11-11",
+          "lessonFile": "2026-11-11_remote-control-copilot-cli-sessions.md"
         }
       ]
     },
@@ -213,6 +228,11 @@
           "topic": "On-Device Models (Running Copilot's MAI Code 1.1 Flash Locally with llama.cpp)",
           "completedDate": "2026-11-02",
           "lessonFile": "2026-11-02_on-device-models-mai-code-flash-llama-cpp.md"
+        },
+        {
+          "topic": "GitHub Copilot Fusion (Automatic Model Routing and Multi-Model Orchestration)",
+          "completedDate": "2026-11-06",
+          "lessonFile": "2026-11-06_***-fusion-automatic-model-routing.md"
         }
       ]
     }
@@ -225,14 +245,6 @@
       "section": "phase_4_deep",
       "priority": 3,
       "addedAt": "2026-10-02"
-    },
-    {
-      "topic": "Remote Control of Copilot CLI Sessions (Steer from GitHub.com or Mobile)",
-      "source": "https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-remote-control",
-      "difficulty": "intermediate",
-      "section": "phase_3_advanced",
-      "priority": 2,
-      "addedAt": "2026-10-16"
     },
     {
       "topic": "Canvases: Interactive Collaboration Surfaces with Agents (Canvas Extensions, /create-canvas)",
@@ -267,28 +279,28 @@
       "addedAt": "2026-10-30"
     },
     {
-      "topic": "GitHub Copilot Fusion (Automatic Model Routing and Multi-Model Orchestration)",
-      "source": "https://docs.github.com/en/copilot/concepts/models/copilot-fusion",
-      "difficulty": "intermediate",
-      "section": "phase_4_deep",
-      "priority": 1,
-      "addedAt": "2026-11-06"
+      "topic": "Delegating Work to Copilot from GitHub (Coding Agent PR Workflows: Issues, @copilot Mentions, Assignments, PR Handoff)",
+      "source": "https://docs.github.com/en/copilot/concepts/agent-capabilities/about-agents/about-***-agents",
+      "difficulty": "beginner",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-11-13"
     },
     {
-      "topic": "Copilot Cloud Sessions (Running Agent Tasks on Managed Cloud Compute)",
-      "source": "https://code.visualstudio.com/docs/agents/run/cloud-sandbox-sessions",
+      "topic": "Cloud Automations in the VS Code Agents Window (Scheduled and Event-Triggered Cloud Runs on GitHub Infrastructure)",
+      "source": "https://code.visualstudio.com/docs/agents/run/automations",
       "difficulty": "intermediate",
       "section": "phase_2_vscode_integration",
-      "priority": 1,
-      "addedAt": "2026-11-06"
+      "priority": 2,
+      "addedAt": "2026-11-13"
     },
     {
-      "topic": "Assisted Permissions (LLM Risk Assessment for Automatic Tool Call Approvals)",
-      "source": "https://code.visualstudio.com/docs/agents/run/approvals",
-      "difficulty": "intermediate",
-      "section": "phase_3_advanced",
-      "priority": 1,
-      "addedAt": "2026-11-06"
+      "topic": "Agent Host Protocol v1.0 (Open Agent Session Protocol and Remote Agent Hosts)",
+      "source": "https://code.visualstudio.com/docs/agents/concepts/agent-host",
+      "difficulty": "advanced",
+      "section": "phase_4_deep",
+      "priority": 3,
+      "addedAt": "2026-11-13"
     }
   ],
   "settings": {
@@ -298,8 +310,8 @@
     "timezone": "Europe/Rome"
   },
   "stats": {
-    "totalLessonsDelivered": 36,
-    "currentStreak": 36,
-    "lastLessonDate": "2026-11-05"
+    "totalLessonsDelivered": 40,
+    "currentStreak": 40,
+    "lastLessonDate": "2026-11-11"
   }
 }
